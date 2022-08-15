@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto Slab:wght@100;300;400;500;700;900&display=swap');
+/**************** index.html *************/
+
+.section-two {
+    margin: 40px 0;
+}
+
+.section-two h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.section-two span {
+    color: #5e7783;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.insta-imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    filter: contrast(120%);
+}
+
+.insta-imgs>div {
+    position: relative;
+}
+
+.icon-overlay {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background: rgba(84, 1, 74, 0.7);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.insta-imgs>div:hover .icon-overlay {
+    opacity: 1;
+}
+
+
+#media {
+    width: 100%;
+    padding: 100px 0px;
+
+    background-image: linear-gradient(100deg, rgba(2, 0, 36, 1) 0%, rgba(69, 12, 77, 0) 34%, rgba(50, 10, 30, 1) 100%), url('https://pbs.twimg.com/media/FGWovX8WYAA3fgL?format=jpg&name=large');
+    background-size: cover;
+    background:  blur(20px) saturate(130%);
+}
+
+.title {
+    background: black;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.videos {
+    padding: 80px 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+}
+
+.video {
+    border-radius: 4px;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    right: 25px;
+    -webkit-box-shadow: 0px 13px 14px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 13px 14px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 13px 14px 8px rgba(0, 0, 0, 0.75);
+}
+
+iframe {
+    height: 100%;
+}
+
+
+.bio-container {
+    display: flex;
+}
+
+#bio {
+    background: black;
+    position: relative;
+    z-index: 3;
+    padding: 100px 0;
+}
+
+.description {
+    width: 50%;
+    color: white;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+    padding: 0 50px;
+}
+
+.logo-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 50px;
+}
+
+.top-img {
+    background-image: url('https://pbs.twimg.com/media/FGWovX8WYAEsht8?format=jpg&name=900x900');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: saturate(0%) contrast(150%);
+    height: 300px;
+}
